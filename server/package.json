@@ -4,10 +4,18 @@
   "description": "back-end demo app for Apollo's lift-off course",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodemon src/index"
+    "start": "nodemon src/index.mjs"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@apollo/server": "^4.3.0",
+    "casual": "^1.6.2",
+    "graphql": "^16.6.0",
+    "node-fetch": "^3.3.0",
+    "unsplash-js": "^7.0.15"
+  },
   "devDependencies": {
+    "@graphql-tools/mock": "^8.7.14",
+    "@graphql-tools/schema": "^9.0.12",
     "dotenv": "^8.6.0",
     "nodemon": "^2.0.20"
   },

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { colors, ApolloIcon } from '../styles';
+import { Icon } from './icon';
 
 /**
  * Footer is useless component to make our app look a little closer to a real website!
@@ -8,9 +9,9 @@ import { colors, ApolloIcon } from '../styles';
 const Footer = ({ children }) => {
   return (
     <FooterContainer>
-      2021 ©{' '}
+      2023 ©{' '}
       <LogoContainer>
-        <ApolloIcon width="100px" height="40px" />
+        <Icon width="60px" height="24px" />
       </LogoContainer>
     </FooterContainer>
   );
