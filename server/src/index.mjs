@@ -5,7 +5,10 @@ import { startStandaloneServer } from '@apollo/server/standalone';
 import { typeDefs, resolvers } from './schema.mjs';
 import casual from 'casual';
 import fetch from 'node-fetch';
-
+//set casual language to english
+casual.define('name', function() { 
+  return `${casual.first_name} ${casual.last_name}`;
+});
 //fetch api and return prop.url from the https://picsum.photos/200/300/ response handleRequest.s.includeCookies
 const getImage = async () => {
   const response = await fetch('https://picsum.photos/200/300/', {
@@ -23,7 +26,7 @@ const mocks = {
   Query: () => ({
     tracksForHome: () => [...new Array(6)] }),
   Track: () => ({
-    id: () => `track_${casual.uuid}`,
+    id: () => `track_${casual.integer(0, 100)}`,
     title: () => casual.title,
     author: () => {
       return {

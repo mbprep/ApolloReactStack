@@ -1,6 +1,15 @@
 import React from 'react';
 import styled from '@emotion/styled';
-//create a component for the company logo image
+
+/**
+ * Icon renders the logo
+ * the logo is an svg file located in the public folder
+ * the logo is styled with styled components
+ * the logo is wrapped in a div to make it responsive
+ * the logo is wrapped in a link to make it clickable
+ * the logo is wrapped in a fragment to make it a valid react component
+ * 
+ */
 export const Icon = () => {
     return (
         <>
