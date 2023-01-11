@@ -28,6 +28,7 @@ const mocks = {
   Track: () => ({
     id: () => `track_${casual.integer(0, 100)}`,
     title: () => casual.title,
+    modulesCount: () => casual.integer(1, 10),
     author: () => {
       return {
         name: casual.name,
